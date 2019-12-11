@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="horizontal">
+
+	<ListView
+		android:layout_height="wrap_content"
+		android:layout_width="200dp"
+		android:id="@+id/projectsLv"
+		android:background="@drawable/border"
+		android:layout_alignParentLeft="true"/>
+
+	<TextView
+		android:id="@+id/detectedTv"
+		android:layout_height="wrap_content"
+		android:text="@string/detected"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_toRightOf="@id/projectsLv"
+		android:layout_width="match_parent"
+		android:layout_alignParentRight="true"/>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="70dp"
+		android:maxLines="50"
+		android:id="@+id/logcatSv"
+		android:background="@drawable/border"
+		android:layout_toRightOf="@id/projectsLv"
+		android:layout_alignParentBottom="true" >
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/logcatTv" />
+
+	</ScrollView>
+	
+	<ListView
+		android:layout_height="match_parent"
+		android:layout_width="wrap_content"
+		android:layout_below="@id/detectedTv"
+		android:layout_toRightOf="@id/projectsLv"
+		android:layout_above="@id/logcatSv"
+		android:id="@+id/deviceLv"
+		android:divider="@null"/>
+	
+
+</RelativeLayout>
+

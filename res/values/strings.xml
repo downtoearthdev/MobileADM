@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">MobileADM</string>
+	<string name="refresh">Find Devices</string>
+	<string name="settings">Settings</string>
+	<string name="detected">Detected Devices:</string>
+
+</resources>
